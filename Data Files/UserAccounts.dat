@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>UserAccounts</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator>TAB</csvSeperator>
+   <dataFileGUID>ca3517b7-6ce9-4746-bbd2-83e61f6a714c</dataFileGUID>
+   <dataSourceUrl>/Users/sakthi/Desktop/GenRocket/home/output/UserAccounts.csv</dataSourceUrl>
+   <driver>CSV</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

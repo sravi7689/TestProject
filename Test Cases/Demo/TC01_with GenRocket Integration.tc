@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>run terminal commands</description>
+   <name>TC01_with GenRocket Integration</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ef9ae48-55d2-4be3-a48c-b4dd3d9dca50</testCaseGuid>
+</TestCaseEntity>
