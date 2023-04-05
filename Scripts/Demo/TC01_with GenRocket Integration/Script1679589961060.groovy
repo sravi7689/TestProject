@@ -78,25 +78,22 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			String grPwdStrength = testData.get("pwdStrength")
 			System.out.println("Testemail:"+gremail)
 			
-			// Set chrome driver path
-			System.setProperty("webdriver.chrome.driver", "/Users/sakthi/Desktop/softwares/chromedriver_mac64/chromedriver")
+			// Get desired capabilities from Katalon TestOps
+			def desiredCapabilities = DriverFactory.getExecutedRemoteWebDriver().getCapabilities().asMap()
 			
+			// Set desired capabilities for local execution
+			DesiredCapabilities caps = DesiredCapabilities.chrome()
 			ChromeOptions options = new ChromeOptions()
+			
 			options.addArguments("--start-maximized")
-			options.setCapability(CapabilityType.BROWSER_NAME, "chrome")
-			WebDriver driver = new ChromeDriver(options)
-
-			// Set desired capabilities
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome()
-			capabilities.setCapability(ChromeOptions.CAPABILITY, options)
+			options.addArguments("--disable-extensions")
 			
-			// Start Chrome driver with desired capabilities
-			//ChromeDriver driver = DriverFactory.changeWebDriver(capabilities)
+			caps.setCapability(ChromeOptions.CAPABILITY, options)
+			caps.setCapability("version", desiredCapabilities.get("version"))
+			caps.setCapability("platform", "MAC")
+
+			DriverFactory.changeWebDriver(new org.openqa.selenium.chrome.ChromeDriver(caps))
 			
-			// Use the DriverFactory class to create a new Chrome driver instance with the desired capabilities
-			//WebDriver driver = DriverFactory.changeWebDriver(capabilities)
-
-
 			WebUI.openBrowser('')
 			WebUI.navigateToUrl('https://magento.softwaretestingboard.com/')
 			WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Create an Account'))
