@@ -24,6 +24,8 @@ import groovy.json.JsonOutput
 import org.openqa.selenium.chrome.ChromeOptions
 import com.kms.katalon.core.webui.driver.DriverFactory
 
+
+
 //Import GenRocket Jars
 import com.genRocket.engine.EngineAPI as EngineAPI
 import com.genRocket.engine.EngineManual as EngineManual
@@ -33,12 +35,20 @@ def jsonSlurper = new JsonSlurper()
 List<Object> genrocketData
 String jsonData
 
+
 // Set Desired Capabilities
 def desiredCapabilities = new HashMap<String, Object>()
-desiredCapabilities.setCapability("browserName", "chrome")
-desiredCapabilities.setCapability("version", "latest")
-desiredCapabilities.setCapability("platform", "macOS 12.5")
-desiredCapabilities.setCapability("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
+desiredCapabilities.put("browserName", "chrome")
+desiredCapabilities.put("version", "latest")
+desiredCapabilities.put("platform", "macOS 12.5")
+desiredCapabilities.put("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
+
+// Set Desired Capabilities
+//DesiredCapabilities desiredCapabilities = new DesiredCapabilities()
+//desiredCapabilities.setCapability("browserName", "chrome")
+//desiredCapabilities.setCapability("version", "latest")
+//desiredCapabilities.setCapability("platform", "macOS 12.5")
+//desiredCapabilities.setCapability("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
 
 //Load GenRocket components
 String scenarioPath = '/Users/sakthi/Desktop/GenRocket/home'
@@ -70,6 +80,7 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			String grPwdStrength = testData.get("pwdStrength")
 			System.out.println("Testemail:"+gremail)
 			
+			// Start the browser with Desired Capabilities
 			WebUI.comment("Starting browser with Desired Capabilities: " + desiredCapabilities.toString())
 			DriverFactory.changeWebDriver(desiredCapabilities)
 			//WebUI.openBrowser('')
