@@ -76,7 +76,7 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			String grPwd = testData.get("pwd")
 			String grCnfPwd = testData.get("confirmPwd")
 			String grPwdStrength = testData.get("pwdStrength")
-			System.out.println("Testemail: "+gremail +"----"+ "Password meter: " +grPwdStrength)
+			System.out.println("Testemail: "+gremail +" <----> "+ "Password meter: " +grPwdStrength)
 			
 
 /*			
