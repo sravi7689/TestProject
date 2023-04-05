@@ -78,22 +78,8 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			String grPwdStrength = testData.get("pwdStrength")
 			System.out.println("Testemail:"+gremail)
 			
-			// Get desired capabilities from Katalon TestOps
-			def desiredCapabilities = DriverFactory.getExecutedRemoteWebDriver().getCapabilities().asMap()
-			
-			// Set desired capabilities for local execution
-			DesiredCapabilities caps = DesiredCapabilities.chrome()
-			ChromeOptions options = new ChromeOptions()
-			
-			options.addArguments("--start-maximized")
-			options.addArguments("--disable-extensions")
-			
-			caps.setCapability(ChromeOptions.CAPABILITY, options)
-			caps.setCapability("version", desiredCapabilities.get("version"))
-			caps.setCapability("platform", "MAC")
 
-			DriverFactory.changeWebDriver(new org.openqa.selenium.chrome.ChromeDriver(caps))
-			
+/*			
 			WebUI.openBrowser('')
 			WebUI.navigateToUrl('https://magento.softwaretestingboard.com/')
 			WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Create an Account'))
@@ -110,6 +96,8 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			WebUI.click(findTestObject('Object Repository/Page_Home Page/button_Change'))
 			WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Sign Out'))
 			WebUI.closeBrowser()
+			
+*/
 	}
 
 
