@@ -78,6 +78,17 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			String grPwdStrength = testData.get("pwdStrength")
 			System.out.println("Testemail:"+gremail)
 			
+			
+			// Create an instance of the ChromeOptions class
+			ChromeOptions options = new ChromeOptions()
+			
+			// Set the desired capabilities for Chrome
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome()
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options)
+			
+			// Use the DriverFactory class to create a new Chrome driver instance with the desired capabilities
+			WebDriver driver = DriverFactory.changeWebDriver(capabilities)
+			
 
 
 			WebUI.openBrowser('')
