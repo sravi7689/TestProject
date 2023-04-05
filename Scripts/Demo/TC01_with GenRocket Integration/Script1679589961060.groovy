@@ -39,17 +39,19 @@ List<Object> genrocketData
 String jsonData
 
 
-// Create a new instance of ChromeOptions
-ChromeOptions options = new ChromeOptions()
-// Set the desired capabilities
-DesiredCapabilities capabilities = DesiredCapabilities.chrome()
-capabilities.setCapability(ChromeOptions.CAPABILITY, options)
-capabilities.setCapability("browserVersion", "latest")
-capabilities.setCapability("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
-// Create a new instance of the ChromeDriver with desired capabilities
-WebDriver driver = new ChromeDriver(capabilities)
-// Set the WebDriver instance to be used by Katalon
-DriverFactory.changeWebDriver(driver)
+
+// Define desired capabilities for Chrome browser
+DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome()
+ChromeOptions chromeOptions = new ChromeOptions()
+chromeOptions.addArguments("--disable-extensions")
+desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions)
+desiredCapabilities.setCapability("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
+desiredCapabilities.setCapability("browserName", "chrome")
+desiredCapabilities.setCapability("version", "latest")
+desiredCapabilities.setCapability("platform", "macOS 12.5")
+
+// Set up the Chrome driver with desired capabilities
+System.setProperty("webdriver.chrome.driver", "/Users/sakthi/Desktop/softwares/chromedriver_mac64/")
 
 
 
@@ -100,8 +102,8 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			System.out.println("Testemail:"+gremail)
 			
 			// Start the browser with Desired Capabilities
-			//WebUI.comment("Starting browser with Desired Capabilities: " + desiredCapabilities.toString())
-			//DriverFactory.changeWebDriver(desiredCapabilities)
+			WebUI.comment("Starting browser with Desired Capabilities: " + desiredCapabilities.toString())
+			DriverFactory.changeWebDriver(desiredCapabilities)
 			//WebUI.openBrowser('')
 			WebUI.navigateToUrl('https://magento.softwaretestingboard.com/')
 			WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Create an Account'))
