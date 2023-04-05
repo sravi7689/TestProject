@@ -21,11 +21,14 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
-import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.Proxy
+import org.openqa.selenium.remote.CapabilityType
+import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.remote.DesiredCapabilities
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 
 
@@ -37,32 +40,6 @@ EngineAPI engine = new EngineManual()
 def jsonSlurper = new JsonSlurper()
 List<Object> genrocketData
 String jsonData
-
-
-
-// Define desired capabilities for Chrome browser
-DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome()
-ChromeOptions chromeOptions = new ChromeOptions()
-chromeOptions.addArguments("--disable-extensions")
-desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions)
-desiredCapabilities.setCapability("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
-desiredCapabilities.setCapability("browserName", "chrome")
-desiredCapabilities.setCapability("version", "latest")
-desiredCapabilities.setCapability("platform", "macOS 12.5")
-
-// Set up the Chrome driver with desired capabilities
-System.setProperty("webdriver.chrome.driver", "/Users/sakthi/Desktop/softwares/chromedriver_mac64/")
-
-
-
-
-
-// Set Desired Capabilities
-//def desiredCapabilities = new HashMap<String, Object>()
-//desiredCapabilities.put("browserName", "chrome")
-//desiredCapabilities.put("version", "latest")
-//desiredCapabilities.put("platform", "macOS 12.5")
-//desiredCapabilities.put("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
 
 // Set Desired Capabilities
 //DesiredCapabilities desiredCapabilities = new DesiredCapabilities()
@@ -101,10 +78,9 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			String grPwdStrength = testData.get("pwdStrength")
 			System.out.println("Testemail:"+gremail)
 			
-			// Start the browser with Desired Capabilities
-			WebUI.comment("Starting browser with Desired Capabilities: " + desiredCapabilities.toString())
-			DriverFactory.changeWebDriver(desiredCapabilities)
-			//WebUI.openBrowser('')
+
+
+			WebUI.openBrowser('')
 			WebUI.navigateToUrl('https://magento.softwaretestingboard.com/')
 			WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Create an Account'))
 			WebUI.setText(findTestObject('Object Repository/Page_Create New Customer Account/firstName'), grFName)
