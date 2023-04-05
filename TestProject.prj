@@ -3,10 +3,10 @@
    <description></description>
    <name>TestProject</name>
    <tag></tag>
-   <UUID>ddb212aa-00aa-4df0-9a2b-1e191cc21572</UUID>
+   <UUID>c1b129e4-b72d-46a4-a9bb-70aedde54213</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/sakthi/Katalon Studio/TestProject/TestProject.prj</projectFileLocation>
+   <projectFileLocation>/Users/sakthi/git/TestProject/TestProject.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -26,5 +26,5 @@
       </systemFolderList>
    </sourceContent>
    <timeStampInProperties>false</timeStampInProperties>
-   <type>WEBUI</type>
+   <type>GENERIC</type>
 </Project>

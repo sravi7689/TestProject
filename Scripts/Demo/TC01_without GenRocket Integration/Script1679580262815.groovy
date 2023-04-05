@@ -18,8 +18,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-
-// automation scripts
+// Test automation scripts
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://magento.softwaretestingboard.com/')
@@ -53,4 +52,3 @@ WebUI.click(findTestObject('Object Repository/Page_Home Page/button_Change'))
 WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Sign Out'))
 
 WebUI.closeBrowser()
-

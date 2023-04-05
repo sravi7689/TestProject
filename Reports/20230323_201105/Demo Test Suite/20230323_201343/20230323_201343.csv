@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Demo Test Suite,Chrome 111.0.0.0,,,2023-03-23 20:13:50,2023-03-23 20:14:17,26.668s,FAILED
+,,,,,,,
+Test Cases/Demo/TC01_without GenRocket Integration,Chrome 111.0.0.0,run terminal commands,,2023-03-23 20:13:51,2023-03-23 20:14:17,26.221s,FAILED
+"openBrowser("""")",Chrome 111.0.0.0,,,2023-03-23 20:13:52,2023-03-23 20:13:58,6.611s,PASSED
+"navigateToUrl(""https://magento.softwaretestingboard.com/"")",Chrome 111.0.0.0,,,2023-03-23 20:13:58,2023-03-23 20:14:03,5.064s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Create an Account""))",Chrome 111.0.0.0,,,2023-03-23 20:14:03,2023-03-23 20:14:10,7.094s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/firstName""), fName)",Chrome 111.0.0.0,,,2023-03-23 20:14:10,2023-03-23 20:14:12,1.245s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/lastName""), lName)",Chrome 111.0.0.0,,,2023-03-23 20:14:12,2023-03-23 20:14:13,1.082s,PASSED
+"click(findTestObject(""Object Repository/Page_Create New Customer Account/subscription checkbox""))",Chrome 111.0.0.0,,,2023-03-23 20:14:13,2023-03-23 20:14:13,0.646s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/email""), email)",Chrome 111.0.0.0,,,2023-03-23 20:14:13,2023-03-23 20:14:15,1.057s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/pwd""), pwd)",Chrome 111.0.0.0,,,2023-03-23 20:14:15,2023-03-23 20:14:15,0.923s,PASSED
+"out.println(""pwd:"" + pwd)",Chrome 111.0.0.0,,,2023-03-23 20:14:15,2023-03-23 20:14:15,0.023s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/pwd_confirm""), confirmPwd)",Chrome 111.0.0.0,,,2023-03-23 20:14:15,2023-03-23 20:14:16,0.963s,PASSED
+"verifyElementText(findTestObject(""Page_Create New Customer Account/passwordMeter""), pwdStrength)",Chrome 111.0.0.0,,,2023-03-23 20:14:16,2023-03-23 20:14:17,0.660s,FAILED

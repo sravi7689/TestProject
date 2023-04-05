@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Demo Test Suite" time="112.936" tests="1" failures="0" errors="0">
+   <testsuite name="Demo Test Suite" tests="1" failures="0" errors="0" time="112.936" skipped="0" timestamp="2023-03-23 14:08:34" hostname="sakthi - sakthivels-mbp" id="Test Suites/Demo Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/sakthi/Katalon Studio/TestProject/Reports/20230323_140827/Demo Test Suite/20230323_140827"/>
+         <property name="logFiles" value="/Users/sakthi/Katalon Studio/TestProject/Reports/20230323_140827/Demo Test Suite/20230323_140827/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="sakthi - sakthivels-mbp"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.6.0.208"/>
+         <property name="browser" value="Chrome 111.0.0.0"/>
+         <property name="hostAddress" value="192.168.0.45"/>
+         <property name="sessionId" value="e9604766859a41eafe6b2efe4bad51e5"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/TC02_with GenRocket Integration" time="112.455" classname="Test Cases/TC02_with GenRocket Integration" status="PASSED">
+         <system-out><![CDATA[2023-03-23 14:08:35 - [TEST_CASE][PASSED] - Test Cases/TC02_with GenRocket Integration: Test Cases/TC02_with GenRocket Integration
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - scenarioPath = "/Users/sakthi/Desktop/GenRocket/home": null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - scenarioName = "UserAccScenario.grs": null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - testDataSuiteName = "TestDataCase.gtdc": null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - testDataCategoryName = "System": null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - testDataCaseName = "pwdGen": null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - fileSep = System.getProperty("file.separator"): null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - scenarioPathAndName = scenarioPath + fileSep + scenarioName: null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - testDataSuitePath = scenarioPath + fileSep + testDataSuiteName: null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - out.println("scenarioPathAndName: " + scenarioPathAndName): null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - out.println("testDataSuitePath " + testDataSuitePath): null
+
+2023-03-23 14:08:36 - [TEST_STEP][PASSED] - engine = new com.genRocket.engine.EngineManual(): null
+
+2023-03-23 14:08:37 - [TEST_STEP][PASSED] - engine.scenarioLoad(scenarioPathAndName): null
+
+2023-03-23 14:08:42 - [TEST_STEP][PASSED] - engine.testDataCaseAdd(testDataSuitePath, testDataCategoryName, testDataCaseName, true, true, null, null): null
+
+2023-03-23 14:08:42 - [TEST_STEP][PASSED] - engine.applyGCases(): null
+
+2023-03-23 14:08:42 - [TEST_STEP][PASSED] - engine.scenarioRun(): null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - jsonFile = new java.io.File((scenarioPath + /output/UserAccounts.json)): null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - jsonData = jsonSlurper.parseText(text): null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - for (def testData : jsonData): Browser is closed
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - grFName = fName: null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - grLName = lName: null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - gremail = email: null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - grPwd = pwd: null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - grCnfPwd = confirmPwd: null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - out.println("testData.email:" + gremail): null
+
+2023-03-23 14:08:43 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2023-03-23 14:08:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-03-23 14:08:43 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-03-23 14:08:50 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-03-23 14:08:50 - [TEST_STEP][PASSED] - navigateToUrl("https://magento.softwaretestingboard.com/"): Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 14:08:55 - [MESSAGE][PASSED] - Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 14:08:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Create an Account")): Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 14:09:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 14:09:02 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/firstName"), grFName): Text 'Genevieve' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 14:09:04 - [MESSAGE][PASSED] - Text 'Genevieve' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 14:09:04 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/lastName"), grLName): Text 'Canfield' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 14:09:05 - [MESSAGE][PASSED] - Text 'Canfield' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 14:09:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/subscription checkbox")): Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 14:09:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 14:09:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/email"), gremail): Text 'Genevieve.Canfield@microsoft.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 14:09:07 - [MESSAGE][PASSED] - Text 'Genevieve.Canfield@microsoft.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 14:09:07 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd"), grPwd): Text 'Mvqh-046' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 14:09:08 - [MESSAGE][PASSED] - Text 'Mvqh-046' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 14:09:08 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd_confirm"), grCnfPwd): Text 'Mvqh-046' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 14:09:09 - [MESSAGE][PASSED] - Text 'Mvqh-046' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 14:09:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/Create an Account button")): Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 14:09:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 14:09:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_My Account/img")): Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 14:09:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 14:09:18 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+2023-03-23 14:09:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/button_Change")): Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 14:09:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 14:09:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Sign Out")): Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 14:09:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 14:09:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2023-03-23 14:09:21 - [MESSAGE][PASSED] - Browser is closed
+
+2023-03-23 14:09:21 - [TEST_STEP][PASSED] - grFName = fName: null
+
+2023-03-23 14:09:21 - [TEST_STEP][PASSED] - grLName = lName: null
+
+2023-03-23 14:09:21 - [TEST_STEP][PASSED] - gremail = email: null
+
+2023-03-23 14:09:21 - [TEST_STEP][PASSED] - grPwd = pwd: null
+
+2023-03-23 14:09:21 - [TEST_STEP][PASSED] - grCnfPwd = confirmPwd: null
+
+2023-03-23 14:09:21 - [TEST_STEP][PASSED] - out.println("testData.email:" + gremail): null
+
+2023-03-23 14:09:21 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2023-03-23 14:09:21 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-03-23 14:09:21 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-03-23 14:09:26 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-03-23 14:09:26 - [TEST_STEP][PASSED] - navigateToUrl("https://magento.softwaretestingboard.com/"): Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 14:09:30 - [MESSAGE][PASSED] - Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 14:09:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Create an Account")): Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 14:09:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 14:09:35 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/firstName"), grFName): Text 'Solange' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 14:09:37 - [MESSAGE][PASSED] - Text 'Solange' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 14:09:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/lastName"), grLName): Text 'Ellsworth' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 14:09:38 - [MESSAGE][PASSED] - Text 'Ellsworth' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 14:09:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/subscription checkbox")): Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 14:09:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 14:09:39 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/email"), gremail): Text 'Solange.Ellsworth@google.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 14:09:40 - [MESSAGE][PASSED] - Text 'Solange.Ellsworth@google.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 14:09:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd"), grPwd): Text 'Sciqg!735' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 14:09:42 - [MESSAGE][PASSED] - Text 'Sciqg!735' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 14:09:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd_confirm"), grCnfPwd): Text 'Sciqg!735' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 14:09:43 - [MESSAGE][PASSED] - Text 'Sciqg!735' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 14:09:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/Create an Account button")): Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 14:09:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 14:09:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_My Account/img")): Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 14:09:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 14:09:50 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+2023-03-23 14:09:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/button_Change")): Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 14:09:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 14:09:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Sign Out")): Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 14:09:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 14:09:54 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2023-03-23 14:09:54 - [MESSAGE][PASSED] - Browser is closed
+
+2023-03-23 14:09:54 - [TEST_STEP][PASSED] - grFName = fName: null
+
+2023-03-23 14:09:54 - [TEST_STEP][PASSED] - grLName = lName: null
+
+2023-03-23 14:09:54 - [TEST_STEP][PASSED] - gremail = email: null
+
+2023-03-23 14:09:54 - [TEST_STEP][PASSED] - grPwd = pwd: null
+
+2023-03-23 14:09:54 - [TEST_STEP][PASSED] - grCnfPwd = confirmPwd: null
+
+2023-03-23 14:09:54 - [TEST_STEP][PASSED] - out.println("testData.email:" + gremail): null
+
+2023-03-23 14:09:54 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2023-03-23 14:09:54 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-03-23 14:09:54 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-03-23 14:09:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-03-23 14:09:59 - [TEST_STEP][PASSED] - navigateToUrl("https://magento.softwaretestingboard.com/"): Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 14:10:04 - [MESSAGE][PASSED] - Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 14:10:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Create an Account")): Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 14:10:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 14:10:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/firstName"), grFName): Text 'Desiree' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 14:10:11 - [MESSAGE][PASSED] - Text 'Desiree' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 14:10:11 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/lastName"), grLName): Text 'Hamm' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 14:10:12 - [MESSAGE][PASSED] - Text 'Hamm' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 14:10:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/subscription checkbox")): Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 14:10:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 14:10:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/email"), gremail): Text 'Desiree.Hamm@yahoo.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 14:10:13 - [MESSAGE][PASSED] - Text 'Desiree.Hamm@yahoo.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 14:10:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd"), grPwd): Text 'vzcxfil+021' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 14:10:15 - [MESSAGE][PASSED] - Text 'vzcxfil+021' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 14:10:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd_confirm"), grCnfPwd): Text 'vzcxfil+021' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 14:10:16 - [MESSAGE][PASSED] - Text 'vzcxfil+021' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 14:10:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/Create an Account button")): Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 14:10:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 14:10:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_My Account/img")): Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 14:10:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 14:10:24 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+2023-03-23 14:10:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/button_Change")): Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 14:10:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 14:10:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Sign Out")): Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 14:10:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 14:10:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2023-03-23 14:10:27 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-03-23 14:08:34 - [TEST_SUITE][PASSED] - Demo Test Suite: Test Cases/TC02_with GenRocket Integration]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

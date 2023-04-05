@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Demo Test Suite" time="136.066" tests="2" failures="1" errors="0">
+   <testsuite name="Demo Test Suite" tests="2" failures="1" errors="0" time="136.066" skipped="0" timestamp="2023-03-23 20:11:13" hostname="sakthi - sakthivels-mbp" id="Test Suites/Demo Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/sakthi/Katalon Studio/TestProject/Reports/20230323_201105/Demo Test Suite/20230323_201105"/>
+         <property name="logFiles" value="/Users/sakthi/Katalon Studio/TestProject/Reports/20230323_201105/Demo Test Suite/20230323_201105/execution0.log"/>
+         <property name="attachments" value="/Users/sakthi/Katalon Studio/TestProject/Reports/20230323_201105/Demo Test Suite/20230323_201105/1679602408845.png, /Users/sakthi/Katalon Studio/TestProject/Reports/20230323_201105/Demo Test Suite/20230323_201105/1679602408980.png"/>
+         <property name="hostName" value="sakthi - sakthivels-mbp"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.6.0.208"/>
+         <property name="browser" value="Chrome 111.0.0.0"/>
+         <property name="hostAddress" value="192.168.0.45"/>
+         <property name="sessionId" value="3fec5d91287dc039124a9e68fba60389"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Demo/TC01_with GenRocket Integration" time="113.803" classname="Test Cases/Demo/TC01_with GenRocket Integration" status="PASSED">
+         <system-out><![CDATA[2023-03-23 20:11:13 - [TEST_CASE][PASSED] - Test Cases/Demo/TC01_with GenRocket Integration: Test Cases/Demo/TC01_with GenRocket Integration
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - scenarioPath = "/Users/sakthi/Desktop/GenRocket/home": null
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - scenarioName = "UserAccScenario.grs": null
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - testDataSuiteName = "TestDataCase.gtdc": null
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - testDataCategoryName = "System": null
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - testDataCaseName = "pwdGen": null
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - fileSep = System.getProperty("file.separator"): null
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - scenarioPathAndName = scenarioPath + fileSep + scenarioName: null
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - testDataSuitePath = scenarioPath + fileSep + testDataSuiteName: null
+
+2023-03-23 20:11:14 - [TEST_STEP][PASSED] - engine = new com.genRocket.engine.EngineManual(): null
+
+2023-03-23 20:11:15 - [TEST_STEP][PASSED] - engine.scenarioLoad(scenarioPathAndName): null
+
+2023-03-23 20:11:18 - [TEST_STEP][PASSED] - engine.testDataCaseAdd(testDataSuitePath, testDataCategoryName, testDataCaseName, true, true, null, null): null
+
+2023-03-23 20:11:18 - [TEST_STEP][PASSED] - engine.applyGCases(): null
+
+2023-03-23 20:11:18 - [TEST_STEP][PASSED] - engine.scenarioRun(): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - jsonFile = new java.io.File(((scenarioPath + fileSep) + output/UserAccounts.json)): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - jsonData = jsonSlurper.parseText(text): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - for (def testData : jsonData): Browser is closed
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - grFName = testData.get("fName"): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - grLName = testData.get("lName"): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - gremail = testData.get("email"): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - grPwd = testData.get("pwd"): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - grCnfPwd = testData.get("confirmPwd"): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - grPwdStrength = testData.get("pwdStrength"): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - out.println("Testemail:" + gremail): null
+
+2023-03-23 20:11:19 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2023-03-23 20:11:19 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-03-23 20:11:19 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-03-23 20:11:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-03-23 20:11:25 - [TEST_STEP][PASSED] - navigateToUrl("https://magento.softwaretestingboard.com/"): Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 20:11:28 - [MESSAGE][PASSED] - Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 20:11:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Create an Account")): Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 20:11:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 20:11:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/firstName"), grFName): Text 'Chandra' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 20:11:40 - [MESSAGE][PASSED] - Text 'Chandra' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 20:11:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/lastName"), grLName): Text 'Lessard' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 20:11:41 - [MESSAGE][PASSED] - Text 'Lessard' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 20:11:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/subscription checkbox")): Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 20:11:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 20:11:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/email"), gremail): Text 'Chandra.Lessard@yahoo.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 20:11:43 - [MESSAGE][PASSED] - Text 'Chandra.Lessard@yahoo.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 20:11:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd"), grPwd): Text '#300Muhs' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 20:11:44 - [MESSAGE][PASSED] - Text '#300Muhs' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 20:11:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd_confirm"), grCnfPwd): Text '#300Muhs' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 20:11:45 - [MESSAGE][PASSED] - Text '#300Muhs' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 20:11:45 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_Create New Customer Account/passwordMeter"), grPwdStrength): Actual text and expected text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are matched.
+
+2023-03-23 20:11:46 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are matched.
+
+2023-03-23 20:11:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/Create an Account button")): Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 20:11:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 20:11:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_My Account/img")): Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 20:11:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 20:11:54 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+2023-03-23 20:11:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/button_Change")): Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 20:11:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 20:11:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Sign Out")): Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 20:11:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2023-03-23 20:11:57 - [MESSAGE][PASSED] - Browser is closed
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - grFName = testData.get("fName"): null
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - grLName = testData.get("lName"): null
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - gremail = testData.get("email"): null
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - grPwd = testData.get("pwd"): null
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - grCnfPwd = testData.get("confirmPwd"): null
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - grPwdStrength = testData.get("pwdStrength"): null
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - out.println("Testemail:" + gremail): null
+
+2023-03-23 20:11:57 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2023-03-23 20:11:57 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-03-23 20:11:57 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-03-23 20:12:02 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-03-23 20:12:02 - [TEST_STEP][PASSED] - navigateToUrl("https://magento.softwaretestingboard.com/"): Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 20:12:06 - [MESSAGE][PASSED] - Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 20:12:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Create an Account")): Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 20:12:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 20:12:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/firstName"), grFName): Text 'Nidia' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 20:12:14 - [MESSAGE][PASSED] - Text 'Nidia' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 20:12:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/lastName"), grLName): Text 'Maurer' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 20:12:15 - [MESSAGE][PASSED] - Text 'Maurer' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 20:12:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/subscription checkbox")): Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 20:12:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 20:12:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/email"), gremail): Text 'Nidia.Maurer@apple.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 20:12:17 - [MESSAGE][PASSED] - Text 'Nidia.Maurer@apple.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 20:12:17 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd"), grPwd): Text 'Mlrsp#347' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 20:12:18 - [MESSAGE][PASSED] - Text 'Mlrsp#347' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 20:12:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd_confirm"), grCnfPwd): Text 'Mlrsp#347' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 20:12:19 - [MESSAGE][PASSED] - Text 'Mlrsp#347' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 20:12:19 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_Create New Customer Account/passwordMeter"), grPwdStrength): Actual text and expected text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are matched.
+
+2023-03-23 20:12:20 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are matched.
+
+2023-03-23 20:12:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/Create an Account button")): Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 20:12:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 20:12:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_My Account/img")): Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 20:12:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 20:12:28 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+2023-03-23 20:12:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/button_Change")): Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 20:12:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 20:12:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Sign Out")): Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 20:12:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2023-03-23 20:12:32 - [MESSAGE][PASSED] - Browser is closed
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - grFName = testData.get("fName"): null
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - grLName = testData.get("lName"): null
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - gremail = testData.get("email"): null
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - grPwd = testData.get("pwd"): null
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - grCnfPwd = testData.get("confirmPwd"): null
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - grPwdStrength = testData.get("pwdStrength"): null
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - out.println("Testemail:" + gremail): null
+
+2023-03-23 20:12:32 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2023-03-23 20:12:32 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-03-23 20:12:32 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-03-23 20:12:36 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-03-23 20:12:36 - [TEST_STEP][PASSED] - navigateToUrl("https://magento.softwaretestingboard.com/"): Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 20:12:41 - [MESSAGE][PASSED] - Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 20:12:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Create an Account")): Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 20:12:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 20:12:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/firstName"), grFName): Text 'Eula' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 20:12:49 - [MESSAGE][PASSED] - Text 'Eula' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 20:12:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/lastName"), grLName): Text 'Coffman' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 20:12:50 - [MESSAGE][PASSED] - Text 'Coffman' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 20:12:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/subscription checkbox")): Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 20:12:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 20:12:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/email"), gremail): Text 'Eula.Coffman@microsoft.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 20:12:52 - [MESSAGE][PASSED] - Text 'Eula.Coffman@microsoft.com' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 20:12:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd"), grPwd): Text 'qwkxgli.493' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 20:12:53 - [MESSAGE][PASSED] - Text 'qwkxgli.493' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 20:12:53 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd_confirm"), grCnfPwd): Text 'qwkxgli.493' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 20:12:54 - [MESSAGE][PASSED] - Text 'qwkxgli.493' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 20:12:54 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_Create New Customer Account/passwordMeter"), grPwdStrength): Actual text and expected text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are matched.
+
+2023-03-23 20:12:55 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are matched.
+
+2023-03-23 20:12:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/Create an Account button")): Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 20:13:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/Create an Account button' is clicked on
+
+2023-03-23 20:13:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_My Account/img")): Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 20:13:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_My Account/img' is clicked on
+
+2023-03-23 20:13:03 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+2023-03-23 20:13:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/button_Change")): Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 20:13:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/button_Change' is clicked on
+
+2023-03-23 20:13:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Sign Out")): Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 20:13:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Sign Out' is clicked on
+
+2023-03-23 20:13:07 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2023-03-23 20:13:07 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Demo/TC01_without GenRocket Integration" time="21.762" classname="Test Cases/Demo/TC01_without GenRocket Integration" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Demo/TC01_without GenRocket Integration FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at TC01_without GenRocket Integration.run(TC01_without GenRocket Integration:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1679602265394.run(TempTestSuite1679602265394.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2023-03-23 20:13:07 - [TEST_CASE][FAILED] - Test Cases/Demo/TC01_without GenRocket Integration: Test Cases/Demo/TC01_without GenRocket Integration FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at TC01_without GenRocket Integration.run(TC01_without GenRocket Integration:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1679602265394.run(TempTestSuite1679602265394.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2023-03-23 20:13:07 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2023-03-23 20:13:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2023-03-23 20:13:07 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2023-03-23 20:13:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2023-03-23 20:13:12 - [TEST_STEP][PASSED] - navigateToUrl("https://magento.softwaretestingboard.com/"): Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 20:13:16 - [MESSAGE][PASSED] - Navigate to 'https://magento.softwaretestingboard.com/' successfully
+
+2023-03-23 20:13:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Home Page/a_Create an Account")): Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 20:13:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Home Page/a_Create an Account' is clicked on
+
+2023-03-23 20:13:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/firstName"), fName): Text '' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 20:13:23 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Create New Customer Account/firstName'
+
+2023-03-23 20:13:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/lastName"), lName): Text '' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 20:13:24 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Create New Customer Account/lastName'
+
+2023-03-23 20:13:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create New Customer Account/subscription checkbox")): Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 20:13:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create New Customer Account/subscription checkbox' is clicked on
+
+2023-03-23 20:13:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/email"), email): Text '' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 20:13:26 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Create New Customer Account/email'
+
+2023-03-23 20:13:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd"), pwd): Text '' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 20:13:27 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Create New Customer Account/pwd'
+
+2023-03-23 20:13:27 - [TEST_STEP][PASSED] - out.println("pwd:" + pwd): null
+
+2023-03-23 20:13:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create New Customer Account/pwd_confirm"), confirmPwd): Text '' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 20:13:28 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_Create New Customer Account/pwd_confirm'
+
+2023-03-23 20:13:28 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("Page_Create New Customer Account/passwordMeter"), pwdStrength): Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at TC01_without GenRocket Integration.run(TC01_without GenRocket Integration:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1679602265394.run(TempTestSuite1679602265394.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+
+2023-03-23 20:13:28 - [MESSAGE][FAILED] - Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at TC01_without GenRocket Integration.run(TC01_without GenRocket Integration:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1679602265394.run(TempTestSuite1679602265394.groovy:36)
+)
+[[ATTACHMENT|/Users/sakthi/Katalon Studio/TestProject/Reports/20230323_201105/Demo Test Suite/20230323_201105/1679602408845.png]]
+
+2023-03-23 20:13:29 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at TC01_without GenRocket Integration.run(TC01_without GenRocket Integration:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1679602265394.run(TempTestSuite1679602265394.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+[[ATTACHMENT|/Users/sakthi/Katalon Studio/TestProject/Reports/20230323_201105/Demo Test Suite/20230323_201105/1679602408980.png]]]]></system-out>
+         <system-err><![CDATA[2023-03-23 20:13:07 - [TEST_CASE][FAILED] - Test Cases/Demo/TC01_without GenRocket Integration: Test Cases/Demo/TC01_without GenRocket Integration FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at TC01_without GenRocket Integration.run(TC01_without GenRocket Integration:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1679602265394.run(TempTestSuite1679602265394.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-03-23 20:11:13 - [TEST_SUITE][FAILED] - Demo Test Suite: Test Cases/Demo/TC01_without GenRocket Integration FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at TC01_without GenRocket Integration.run(TC01_without GenRocket Integration:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1679602265394.run(TempTestSuite1679602265394.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2023-03-23 20:11:13 - [TEST_SUITE][FAILED] - Demo Test Suite: Test Cases/Demo/TC01_without GenRocket Integration FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:4749)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at TC01_without GenRocket Integration.run(TC01_without GenRocket Integration:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:187)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1679602265394.run(TempTestSuite1679602265394.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'No Password' and expected text '' of test object 'Object Repository/Page_Create New Customer Account/passwordMeter' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

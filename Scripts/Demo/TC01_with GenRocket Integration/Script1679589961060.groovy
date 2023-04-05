@@ -17,7 +17,15 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
+
+EngineAPI engine = new EngineManual()
+def jsonSlurper = new JsonSlurper()
+List<Object> genrocketData
+String jsonData
 
 //Import GenRocket Jars
 import com.genRocket.engine.EngineAPI as EngineAPI
@@ -29,24 +37,21 @@ String scenarioName = 'UserAccScenario.grs'
 String testDataSuiteName = 'TestDataCase.gtdc'
 String testDataCategoryName = 'System'
 String testDataCaseName = 'pwdGen'
+String genrocketDomain = 'UserAccounts' 
 String fileSep = System.getProperty("file.separator");
 String scenarioPathAndName = scenarioPath + fileSep + scenarioName;
 String testDataSuitePath = scenarioPath + fileSep + testDataSuiteName;
-
-//GenRocket Synthetic Data Generation
-EngineAPI engine = new EngineManual()
 engine.scenarioLoad(scenarioPathAndName)
 engine.testDataCaseAdd(testDataSuitePath, testDataCategoryName, testDataCaseName,true, true, null, null)
 engine.applyGCases()
-engine.scenarioRun()
 
-//Parse the generated data
-def jsonFile = new File(scenarioPath+fileSep+'output/UserAccounts.json')
-def jsonSlurper = new JsonSlurper()
-def jsonData = jsonSlurper.parseText(jsonFile.text)
+//GenRocket Synthetic Data Generation
+genrocketData = engine.scenarioRunInMemory(genrocketDomain)
 
-	//Iterate data for execution
-	for (def testData : jsonData) {
+//Parse and Iterate the generated data for execution
+jsonData = JsonOutput.toJson(genrocketData)
+def jsonObject = jsonSlurper.parseText(jsonData)
+	for (def testData : jsonObject) {
 
 			String grFName = testData.get("fName")
 			String grLName = testData.get("lName")
@@ -75,3 +80,6 @@ def jsonData = jsonSlurper.parseText(jsonFile.text)
 	}
 
 
+
+	
+	

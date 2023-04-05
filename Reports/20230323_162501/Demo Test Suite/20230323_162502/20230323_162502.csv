@@ -1,0 +1,36 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Demo Test Suite,Chrome 111.0.0.0,,,2023-03-23 16:25:09,2023-03-23 16:29:03,3m - 54.360s,FAILED
+,,,,,,,
+Test Cases/Demo/TC01_without GenRocket Integration,Chrome 111.0.0.0,run terminal commands,,2023-03-23 16:26:26,2023-03-23 16:26:50,24.254s,FAILED
+"openBrowser("""")",Chrome 111.0.0.0,,,2023-03-23 16:26:26,2023-03-23 16:26:31,4.931s,PASSED
+"navigateToUrl(""https://magento.softwaretestingboard.com/"")",Chrome 111.0.0.0,,,2023-03-23 16:26:31,2023-03-23 16:26:37,5.905s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Create an Account""))",Chrome 111.0.0.0,,,2023-03-23 16:26:37,2023-03-23 16:26:43,6.287s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/firstName""), fName)",Chrome 111.0.0.0,,,2023-03-23 16:26:43,2023-03-23 16:26:45,1.590s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/lastName""), lName)",Chrome 111.0.0.0,,,2023-03-23 16:26:45,2023-03-23 16:26:46,0.981s,PASSED
+"click(findTestObject(""Object Repository/Page_Create New Customer Account/subscription checkbox""))",Chrome 111.0.0.0,,,2023-03-23 16:26:46,2023-03-23 16:26:46,0.746s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/email""), email)",Chrome 111.0.0.0,,,2023-03-23 16:26:46,2023-03-23 16:26:47,0.988s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/pwd""), pwd)",Chrome 111.0.0.0,,,2023-03-23 16:26:47,2023-03-23 16:26:48,0.959s,PASSED
+"out.println(""pwd:"" + pwd)",Chrome 111.0.0.0,,,2023-03-23 16:26:48,2023-03-23 16:26:48,0.001s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create New Customer Account/pwd_confirm""), confirmPwd)",Chrome 111.0.0.0,,,2023-03-23 16:26:48,2023-03-23 16:26:49,1.013s,PASSED
+"verifyElementText(findTestObject(""Page_Create New Customer Account/passwordMeter""), pwdStrength)",Chrome 111.0.0.0,,,2023-03-23 16:26:49,2023-03-23 16:26:50,0.662s,FAILED
+,,,,,,,
+Test Cases/Demo/TC02_with GenRocket Integration,Chrome 111.0.0.0,run terminal commands,,2023-03-23 16:26:50,2023-03-23 16:29:03,2m - 13.278s,PASSED
+"scenarioPath = ""/Users/sakthi/Desktop/GenRocket/home""",Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.046s,PASSED
+"scenarioName = ""UserAccScenario.grs""",Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.001s,PASSED
+"testDataSuiteName = ""TestDataCase.gtdc""",Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.001s,PASSED
+"testDataCategoryName = ""System""",Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.002s,PASSED
+"testDataCaseName = ""pwdGen""",Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.001s,PASSED
+"fileSep = System.getProperty(""file.separator"")",Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.007s,PASSED
+scenarioPathAndName = scenarioPath + fileSep + scenarioName,Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.000s,PASSED
+testDataSuitePath = scenarioPath + fileSep + testDataSuiteName,Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.001s,PASSED
+"out.println(""scenarioPathAndName: "" + scenarioPathAndName)",Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.001s,PASSED
+"out.println(""testDataSuitePath "" + testDataSuitePath)",Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:51,0.001s,PASSED
+engine = new com.genRocket.engine.EngineManual(),Chrome 111.0.0.0,,,2023-03-23 16:26:51,2023-03-23 16:26:52,1.608s,PASSED
+engine.scenarioLoad(scenarioPathAndName),Chrome 111.0.0.0,,,2023-03-23 16:26:52,2023-03-23 16:26:55,2.288s,PASSED
+"engine.testDataCaseAdd(testDataSuitePath, testDataCategoryName, testDataCaseName, true, true, null, null)",Chrome 111.0.0.0,,,2023-03-23 16:26:55,2023-03-23 16:26:55,0.078s,PASSED
+engine.applyGCases(),Chrome 111.0.0.0,,,2023-03-23 16:26:55,2023-03-23 16:26:55,0.217s,PASSED
+engine.scenarioRun(),Chrome 111.0.0.0,,,2023-03-23 16:26:55,2023-03-23 16:26:56,0.840s,PASSED
+jsonFile = new java.io.File((scenarioPath + /output/UserAccounts.json)),Chrome 111.0.0.0,,,2023-03-23 16:26:56,2023-03-23 16:26:56,0.002s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),Chrome 111.0.0.0,,,2023-03-23 16:26:56,2023-03-23 16:26:56,0.000s,PASSED
+jsonData = jsonSlurper.parseText(text),Chrome 111.0.0.0,,,2023-03-23 16:26:56,2023-03-23 16:26:56,0.003s,PASSED
+for (def testData : jsonData),Chrome 111.0.0.0,,,2023-03-23 16:26:56,2023-03-23 16:29:03,2m - 7.586s,PASSED
