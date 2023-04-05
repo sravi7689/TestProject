@@ -12,7 +12,14 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>5d3aba77-d430-44d5-a0c2-321ba4adb3d3</testSuiteGuid>
    <testCaseLink>
-      <guid>6c524d5f-60ff-40c0-8a78-a3cb3bfbfcce</guid>
+      <guid>e367ec6b-4d1f-46e0-99be-9e21175e9c92</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Demo/TC01_with GenRocket Integration</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>800cc899-a367-4323-bcfb-3077d1d1ebbd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Demo/TC01_without GenRocket Integration</testCaseId>
@@ -53,12 +60,5 @@
          <value></value>
          <variableId>33628aff-258a-4148-b399-3150d312f575</variableId>
       </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>883b0700-01e2-46b5-9a2e-9ded08c16a60</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Demo/TC01_with GenRocket Integration</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
