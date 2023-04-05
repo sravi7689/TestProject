@@ -21,8 +21,12 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
+import org.openqa.selenium.chrome.ChromeOptions
 import com.kms.katalon.core.webui.driver.DriverFactory
 
+//Import GenRocket Jars
+import com.genRocket.engine.EngineAPI as EngineAPI
+import com.genRocket.engine.EngineManual as EngineManual
 
 EngineAPI engine = new EngineManual()
 def jsonSlurper = new JsonSlurper()
@@ -36,9 +40,6 @@ desiredCapabilities.setCapability("version", "latest")
 desiredCapabilities.setCapability("platform", "macOS 12.5")
 desiredCapabilities.setCapability("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
 
-//Import GenRocket Jars
-import com.genRocket.engine.EngineAPI as EngineAPI
-import com.genRocket.engine.EngineManual as EngineManual
 //Load GenRocket components
 String scenarioPath = '/Users/sakthi/Desktop/GenRocket/home'
 String scenarioName = 'UserAccScenario.grs'
