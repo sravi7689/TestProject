@@ -1,4 +1,5 @@
 import java.lang.ProcessBuilder as ProcessBuilder
+import org.openqa.selenium.remote.DesiredCapabilities
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -21,7 +22,7 @@ import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.remote.DesiredCapabilities
+
 
 EngineAPI engine = new EngineManual()
 def jsonSlurper = new JsonSlurper()
