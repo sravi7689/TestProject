@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Without GenRocket Integration,Chrome 111.0.0.0,,,2023-04-05 12:00:53,2023-04-05 12:03:13,2m - 20.756s,FAILED
+,,,,,,,
+Test Cases/Demo/TC01_without GenRocket Integration,Chrome 111.0.0.0,run terminal commands,,2023-04-05 12:03:02,2023-04-05 12:03:13,11.049s,FAILED
+"openBrowser("""")",Chrome 111.0.0.0,,,2023-04-05 12:03:02,2023-04-05 12:03:07,4.506s,PASSED
+"navigateToUrl(""https://magento.softwaretestingboard.com/"")",Chrome 111.0.0.0,,,2023-04-05 12:03:07,2023-04-05 12:03:13,5.784s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Create an Account""))",Chrome 111.0.0.0,,,2023-04-05 12:03:13,2023-04-05 12:03:13,0.616s,FAILED

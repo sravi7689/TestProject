@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+GenRocket Integration,Chrome 111.0.0.0,,,2023-04-05 12:03:35,2023-04-05 12:04:25,49.704s,PASSED
+,,,,,,,
+Test Cases/Demo/TC01_with GenRocket Integration,Chrome 111.0.0.0,run terminal commands,,2023-04-05 12:03:36,2023-04-05 12:04:25,49.245s,PASSED
+engine = new com.genRocket.engine.EngineManual(),Chrome 111.0.0.0,,,2023-04-05 12:03:37,2023-04-05 12:03:38,1.411s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.018s,PASSED
+genrocketData = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.003s,PASSED
+jsonData = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.001s,PASSED
+"scenarioPath = ""/Users/sakthi/Desktop/GenRocket/home""",Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.002s,PASSED
+"scenarioName = ""UserAccScenario.grs""",Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.000s,PASSED
+"testDataSuiteName = ""TestDataCase.gtdc""",Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.001s,PASSED
+"testDataCategoryName = ""System""",Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.001s,PASSED
+"testDataCaseName = ""pwdGen""",Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.002s,PASSED
+"genrocketDomain = ""UserAccounts""",Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.001s,PASSED
+"fileSep = System.getProperty(""file.separator"")",Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.002s,PASSED
+scenarioPathAndName = scenarioPath + fileSep + scenarioName,Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.001s,PASSED
+testDataSuitePath = scenarioPath + fileSep + testDataSuiteName,Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:38,0.003s,PASSED
+engine.scenarioLoad(scenarioPathAndName),Chrome 111.0.0.0,,,2023-04-05 12:03:38,2023-04-05 12:03:41,2.788s,PASSED
+"engine.testDataCaseAdd(testDataSuitePath, testDataCategoryName, testDataCaseName, true, true, null, null)",Chrome 111.0.0.0,,,2023-04-05 12:03:41,2023-04-05 12:03:41,0.082s,PASSED
+engine.applyGCases(),Chrome 111.0.0.0,,,2023-04-05 12:03:41,2023-04-05 12:03:41,0.202s,PASSED
+genrocketData = engine.scenarioRunInMemory(genrocketDomain),Chrome 111.0.0.0,,,2023-04-05 12:03:41,2023-04-05 12:03:42,0.875s,PASSED
+jsonData = JsonOutput.toJson(genrocketData),Chrome 111.0.0.0,,,2023-04-05 12:03:42,2023-04-05 12:03:42,0.016s,PASSED
+jsonObject = jsonSlurper.parseText(jsonData),Chrome 111.0.0.0,,,2023-04-05 12:03:42,2023-04-05 12:03:42,0.001s,PASSED
+for (def testData : jsonObject),Chrome 111.0.0.0,,,2023-04-05 12:03:42,2023-04-05 12:04:25,43.150s,PASSED
