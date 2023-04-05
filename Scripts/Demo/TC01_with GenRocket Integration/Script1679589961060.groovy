@@ -22,7 +22,11 @@ import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.remote.DesiredCapabilities
+<<<<<<< HEAD
 
+=======
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+>>>>>>> branch 'master' of https://github.com/sravi7689/TestProject.git
 
 
 EngineAPI engine = new EngineManual()
@@ -30,7 +34,11 @@ def jsonSlurper = new JsonSlurper()
 List<Object> genrocketData
 String jsonData
 // Set Desired Capabilities
+<<<<<<< HEAD
 def desiredCapabilities = new HashMap<String, Object>()
+=======
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities()
+>>>>>>> branch 'master' of https://github.com/sravi7689/TestProject.git
 desiredCapabilities.setCapability("browserName", "chrome")
 desiredCapabilities.setCapability("version", "latest")
 desiredCapabilities.setCapability("platform", "macOS 12.5")
@@ -71,7 +79,11 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			
 			WebUI.comment("Starting browser with Desired Capabilities: " + desiredCapabilities.toString())
 			DriverFactory.changeWebDriver(desiredCapabilities)
+<<<<<<< HEAD
 			//WebUI.openBrowser('')
+=======
+			WebUI.openBrowser('')
+>>>>>>> branch 'master' of https://github.com/sravi7689/TestProject.git
 			WebUI.navigateToUrl('https://magento.softwaretestingboard.com/')
 			WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Create an Account'))
 			WebUI.setText(findTestObject('Object Repository/Page_Create New Customer Account/firstName'), grFName)
