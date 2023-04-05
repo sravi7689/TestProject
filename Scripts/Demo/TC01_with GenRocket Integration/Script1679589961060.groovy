@@ -79,22 +79,22 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			System.out.println("Testemail:"+gremail)
 			
 			// Set chrome driver path
-			System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver")
+			System.setProperty("webdriver.chrome.driver", "/Users/sakthi/Desktop/softwares/chromedriver_mac64")
 			
-			// Set Chrome options
 			ChromeOptions options = new ChromeOptions()
 			options.addArguments("--start-maximized")
-			
+			options.setCapability(CapabilityType.BROWSER_NAME, "chrome")
+			WebDriver driver = new ChromeDriver(options)
+
 			// Set desired capabilities
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome()
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options)
 			
 			// Start Chrome driver with desired capabilities
-			ChromeDriver driver = DriverFactory.changeWebDriver(capabilities)
+			//ChromeDriver driver = DriverFactory.changeWebDriver(capabilities)
 			
 			// Use the DriverFactory class to create a new Chrome driver instance with the desired capabilities
 			//WebDriver driver = DriverFactory.changeWebDriver(capabilities)
-			
 
 
 			WebUI.openBrowser('')
