@@ -20,12 +20,21 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.remote.DesiredCapabilities
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 EngineAPI engine = new EngineManual()
 def jsonSlurper = new JsonSlurper()
 List<Object> genrocketData
 String jsonData
+// Set Desired Capabilities
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities()
+desiredCapabilities.setCapability("browserName", "chrome")
+desiredCapabilities.setCapability("version", "latest")
+desiredCapabilities.setCapability("platform", "macOS 12.5")
+desiredCapabilities.setCapability("testopsKey", "39176078-16e5-46c3-919d-b3767c96c321")
 
 //Import GenRocket Jars
 import com.genRocket.engine.EngineAPI as EngineAPI
@@ -61,6 +70,8 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			String grPwdStrength = testData.get("pwdStrength")
 			System.out.println("Testemail:"+gremail)
 			
+			WebUI.comment("Starting browser with Desired Capabilities: " + desiredCapabilities.toString())
+			DriverFactory.changeWebDriver(desiredCapabilities)
 			WebUI.openBrowser('')
 			WebUI.navigateToUrl('https://magento.softwaretestingboard.com/')
 			WebUI.click(findTestObject('Object Repository/Page_Home Page/a_Create an Account'))
