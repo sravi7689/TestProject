@@ -79,7 +79,7 @@ def jsonObject = jsonSlurper.parseText(jsonData)
 			System.out.println("Testemail:"+gremail)
 			
 			// Set chrome driver path
-			System.setProperty("webdriver.chrome.driver", "/Users/sakthi/Desktop/softwares/chromedriver_mac64")
+			System.setProperty("webdriver.chrome.driver", "/Users/sakthi/Desktop/softwares/chromedriver_mac64/chromedriver")
 			
 			ChromeOptions options = new ChromeOptions()
 			options.addArguments("--start-maximized")
