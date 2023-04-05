@@ -39,7 +39,6 @@ desiredCapabilities.setCapability("testopsKey", "39176078-16e5-46c3-919d-b3767c9
 //Import GenRocket Jars
 import com.genRocket.engine.EngineAPI as EngineAPI
 import com.genRocket.engine.EngineManual as EngineManual
-
 //Load GenRocket components
 String scenarioPath = '/Users/sakthi/Desktop/GenRocket/home'
 String scenarioName = 'UserAccScenario.grs'
@@ -53,7 +52,6 @@ String testDataSuitePath = scenarioPath + fileSep + testDataSuiteName;
 engine.scenarioLoad(scenarioPathAndName)
 engine.testDataCaseAdd(testDataSuitePath, testDataCategoryName, testDataCaseName,true, true, null, null)
 engine.applyGCases()
-
 
 //GenRocket Synthetic Data Generation
 genrocketData = engine.scenarioRunInMemory(genrocketDomain)
